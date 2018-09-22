@@ -1,5 +1,5 @@
 {
-  "name": "@panoptes/widget-icon-title",
+  "name": "@panoptes/widget-prometheus",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Mike Kusold <git@mikekusold.com>",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@panoptes/dev-configs": "0.0.0",
-    "@panoptes/widget": "0.0.0"
+    "@panoptes/widget-icon-title": "0.0.0"
   },
   "peerDependencies": {
     "react": "^16",

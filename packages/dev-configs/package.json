@@ -1,23 +1,23 @@
 {
-  "name": "panoptes-search",
+  "name": "@panoptes/dev-configs",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Mike Kusold <git@mikekusold.com>",
   "homepage": "",
   "license": "UNLICENSED",
-  "main": "dist/index.js",
+  "main": "lib/panoptes-babel.js",
+  "files": [
+    "babel.config.js",
+    "eslint.config.js",
+    "prettier.config.js"
+  ],
   "scripts": {
-    "build": "babel src -d dist --copy-files",
-    "prepublish": "npm run build",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.1.0",
-    "@panoptes/dev-configs": "0.0.0"
-  },
-  "peerDependencies": {
-    "react": "^16",
-    "react-dom": "^16"
+    "@babel/core": "^7.1.0",
+    "babel-plugin-inline-import-data-uri": "^1.0.1",
+    "next": "^7.0.0"
   }
 }

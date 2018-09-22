@@ -1,14 +1,14 @@
 import getConfig from 'next/config'
 import Layout from '../components/Layout/';
 import Widgets from '../components/Widgets/';
-import Traefik from 'panoptes-traefik';
-import Grafana from 'panoptes-grafana';
-import CAdvisor from 'panoptes-cadvisor';
+import Traefik from '@panoptes/widget-traefik';
+import Grafana from '@panoptes/widget-grafana';
+import CAdvisor from '@panoptes/widget-cadvisor';
 import Search from 'panoptes-search';
-import ElasticSearch from 'panoptes-elasticsearch';
-import Kibana from 'panoptes-kibana';
-import Prometheus from 'panoptes-prometheus';
-import Portainer from 'panoptes-portainer';
+import ElasticSearch from '@panoptes/widget-elasticsearch';
+import Kibana from '@panoptes/widget-kibana';
+import Prometheus from '@panoptes/widget-prometheus';
+import Portainer from '@panoptes/widget-portainer';
 const {publicRuntimeConfig} = getConfig();
 
 const Page = props => (

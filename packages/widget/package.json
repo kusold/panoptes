@@ -17,7 +17,7 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.1.0",
-    "panoptes-dev-configs": "0.0.0"
+    "@panoptes/dev-configs": "0.0.0"
   },
   "peerDependencies": {
     "react": "^16",
