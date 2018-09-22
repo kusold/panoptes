@@ -19,5 +19,6 @@
     "@babel/core": "^7.1.0",
     "babel-plugin-inline-import-data-uri": "^1.0.1",
     "next": "^7.0.0"
-  }
+  },
+  "gitHead": "014e1b71d0cb182c4eb7f99428e42b783f7ecfb1"
 }
