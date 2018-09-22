@@ -1,9 +1,11 @@
-import Widget from 'panoptes-widget'
+import Widget from 'panoptes-widget';
 
 const IconTitle = props => (
 	<Widget backgroundColor={props.backgroundColor} uri={props.uri}>
 		<div className="container">
-			<div className="icon"><img src={props.icon} /></div>
+			<div className="icon">
+				<img src={props.icon} />
+			</div>
 			<div className="title">{props.children}</div>
 		</div>
 		<style jsx>{`
@@ -24,6 +26,6 @@ const IconTitle = props => (
 			}
 		`}</style>
 	</Widget>
-)
+);
 
 export default IconTitle;
