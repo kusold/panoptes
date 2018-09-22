@@ -1,10 +1,13 @@
 {
   "name": "@panoptes/widget-kibana",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "Kibana widget",
   "author": "Mike Kusold <git@mikekusold.com>",
   "homepage": "",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist --copy-files",

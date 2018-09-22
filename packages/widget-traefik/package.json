@@ -5,6 +5,9 @@
   "author": "Mike Kusold <git@mikekusold.com>",
   "homepage": "",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist --copy-files",
