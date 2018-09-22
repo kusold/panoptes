@@ -6,6 +6,7 @@ const Widgets = (props) => (
 			align-content: center;
 			align-items: center;
 			justify-content: center;
+			flex-wrap: wrap;
 			height: 100%;
 		`}</style>
 	</div>
