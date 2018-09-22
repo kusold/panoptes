@@ -1,4 +1,4 @@
-import Widget from 'panoptes-icon-title';
+import Widget from '@panoptes/widget-icon-title';
 import icon from './logo-elasticsearch.svg';
 
 const ElasticSearch = props => (

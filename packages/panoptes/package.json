@@ -20,7 +20,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-		"panoptes-icon-title": "0.0.0",
+		"@panoptes/widget-icon-title": "0.0.0",
 		"panoptes-cadvisor": "0.0.0",
 		"panoptes-elasticsearch": "0.0.0",
 		"panoptes-grafana": "0.0.0",

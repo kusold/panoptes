@@ -16,12 +16,12 @@ const Page = props => (
 			<Search />
 		<Widgets>
 			<Traefik uri={`//${publicRuntimeConfig.host}:8080/`}/>
+			<Portainer uri={`//portainer.${publicRuntimeConfig.host}/`}/>
+			<Kibana uri={`//kibana.${publicRuntimeConfig.host}/`}/>
 			<Grafana uri={`//grafana.${publicRuntimeConfig.host}/`}/>
+			<Prometheus uri={`//prometheus.${publicRuntimeConfig.host}/`}/>
 			<ElasticSearch uri={`//elastic.${publicRuntimeConfig.host}/`}/>
 			<CAdvisor uri={`//cadvisor.${publicRuntimeConfig.host}/`}/>
-			<Kibana uri={`//kibana.${publicRuntimeConfig.host}/`}/>
-			<Prometheus uri={`//prometheus.${publicRuntimeConfig.host}/`}/>
-			<Portainer uri={`//portainer.${publicRuntimeConfig.host}/`}/>
 		</Widgets>
 	</Layout>
 );
