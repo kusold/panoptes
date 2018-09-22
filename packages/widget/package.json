@@ -2,7 +2,7 @@
   "name": "@panoptes/widget",
   "version": "0.0.0",
   "description": "Widget component for panoptes",
-  "author": "Mike Kusold <git@mikekusold.com>",
+  "author": "Mike Kusold <hello@mikekusold.com>",
   "homepage": "",
   "license": "MIT",
   "publishConfig": {

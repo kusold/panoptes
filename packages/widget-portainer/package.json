@@ -2,7 +2,7 @@
   "name": "@panoptes/widget-portainer",
   "version": "0.0.0",
   "description": "Portainer widget",
-  "author": "Mike Kusold <git@mikekusold.com>",
+  "author": "Mike Kusold <hello@mikekusold.com>",
   "homepage": "",
   "license": "MIT",
   "publishConfig": {
