@@ -1,10 +1,13 @@
 {
   "name": "@panoptes/dev-configs",
   "version": "0.1.1",
-  "description": "> TODO: description",
+  "description": "dev configs",
   "author": "Mike Kusold <hello@mikekusold.com>",
   "homepage": "",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "lib/panoptes-babel.js",
   "files": [
     "babel.config.js",
@@ -20,5 +23,5 @@
     "babel-plugin-inline-import-data-uri": "^1.0.1",
     "next": "^7.0.0"
   },
-  "gitHead": "014e1b71d0cb182c4eb7f99428e42b783f7ecfb1"
+  "gitHead": "da7dfd93f281b4c6ac3e09a983852aa064d8eb05"
 }
