@@ -1,11 +1,14 @@
-const withImages = require('next-images')
+const withImages = require('next-images');
 const fs = require('fs');
 
 const dotenv = require('dotenv');
 dotenv.config();
-const privateEnv = dotenv.parse(fs.readFileSync('.env.private'))
-for (var k in privateEnv) {
-  process.env[k] = privateEnv[k]
+
+if(fs.existsSync('.env.private')) {
+	const privateEnv = dotenv.parse(fs.readFileSync('.env.private'));
+	for (var k in privateEnv) {
+		process.env[k] = privateEnv[k];
+	}
 }
 
 
