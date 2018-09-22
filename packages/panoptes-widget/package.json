@@ -13,10 +13,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-		"panoptes-dev-configs": "0.0.0"
+    "@babel/cli": "^7.1.0",
+    "panoptes-dev-configs": "0.0.0"
   },
-	"peerDependencies": {
+  "peerDependencies": {
     "react": "^16",
     "react-dom": "^16"
-	}
+  }
 }

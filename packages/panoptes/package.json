@@ -21,6 +21,9 @@
   },
   "dependencies": {
 		"panoptes-icon-title": "0.0.0",
+		"panoptes-cadvisor": "0.0.0",
+		"panoptes-grafana": "0.0.0",
+		"panoptes-search": "0.0.0",
 		"panoptes-traefik": "0.0.0",
 		"panoptes-widget": "0.0.0",
     "dotenv": "^6.0.0",
