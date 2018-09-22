@@ -1,10 +1,13 @@
 {
-  "name": "panoptes-widget",
+  "name": "@panoptes/widget",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "Widget component for panoptes",
   "author": "Mike Kusold <git@mikekusold.com>",
   "homepage": "",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist --copy-files",
