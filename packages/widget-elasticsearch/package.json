@@ -1,6 +1,6 @@
 {
   "name": "@panoptes/widget-elasticsearch",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Elasticsearch widget",
   "author": "Mike Kusold <hello@mikekusold.com>",
   "homepage": "",
@@ -14,11 +14,10 @@
     "prepublish": "npm run build",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.1.0",
-    "@panoptes/dev-configs": "0.0.0",
-    "@panoptes/widget-icon-title": "0.0.0"
+    "@panoptes/dev-configs": "^0.1.0",
+    "@panoptes/widget-icon-title": "^0.1.0"
   },
   "peerDependencies": {
     "react": "^16",

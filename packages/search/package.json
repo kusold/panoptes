@@ -1,6 +1,6 @@
 {
   "name": "@panoptes/search",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Search bar",
   "author": "Mike Kusold <hello@mikekusold.com>",
   "homepage": "",
@@ -11,10 +11,9 @@
     "prepublish": "npm run build",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.1.0",
-    "@panoptes/dev-configs": "0.0.0"
+    "@panoptes/dev-configs": "^0.1.0"
   },
   "peerDependencies": {
     "react": "^16",
