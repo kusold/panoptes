@@ -5,6 +5,7 @@ import Traefik from 'panoptes-traefik';
 import Grafana from 'panoptes-grafana';
 import CAdvisor from 'panoptes-cadvisor';
 import Search from 'panoptes-search';
+import ElasticSearch from 'panoptes-elasticsearch';
 const {publicRuntimeConfig} = getConfig();
 
 const Page = props => (
@@ -13,6 +14,7 @@ const Page = props => (
 		<Widgets>
 			<Traefik uri={`//${publicRuntimeConfig.host}:8080/`}/>
 			<Grafana uri={`//grafana.${publicRuntimeConfig.host}/`}/>
+			<ElasticSearch uri={`//grafana.${publicRuntimeConfig.host}/`}/>
 			<CAdvisor uri={`//cadvisor.${publicRuntimeConfig.host}/`}/>
 		</Widgets>
 	</Layout>
