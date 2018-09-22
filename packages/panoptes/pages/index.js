@@ -1,7 +1,7 @@
 import getConfig from 'next/config'
 import Layout from '../components/Layout/';
-import Traefik from '../components/Traefik/';
 import Widgets from '../components/Widgets/';
+import Traefik from 'panoptes-traefik';
 const {publicRuntimeConfig} = getConfig();
 
 const Page = props => (

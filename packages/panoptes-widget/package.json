@@ -1,0 +1,22 @@
+{
+  "name": "panoptes-widget",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Mike Kusold <git@mikekusold.com>",
+  "homepage": "",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist --copy-files",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+		"panoptes-dev-configs": "0.0.0"
+  },
+	"peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16"
+	}
+}

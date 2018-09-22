@@ -1,4 +1,4 @@
-import Widget from './'
+import Widget from 'panoptes-widget'
 
 const IconTitle = props => (
 	<Widget backgroundColor={props.backgroundColor} uri={props.uri}>
