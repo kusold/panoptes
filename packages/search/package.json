@@ -1,7 +1,7 @@
 {
-  "name": "panoptes-search",
+  "name": "@panoptes/search",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "Search bar",
   "author": "Mike Kusold <hello@mikekusold.com>",
   "homepage": "",
   "license": "UNLICENSED",
