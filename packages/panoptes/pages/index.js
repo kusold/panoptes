@@ -9,6 +9,7 @@ import ElasticSearch from '@panoptes/widget-elasticsearch';
 import Kibana from '@panoptes/widget-kibana';
 import Prometheus from '@panoptes/widget-prometheus';
 import Portainer from '@panoptes/widget-portainer';
+import Netdata from '@panoptes/widget-netdata';
 const {publicRuntimeConfig} = getConfig();
 
 const Page = props => (
@@ -19,6 +20,7 @@ const Page = props => (
 			<Portainer uri={`//portainer.${publicRuntimeConfig.host}/`}/>
 			<Kibana uri={`//kibana.${publicRuntimeConfig.host}/`}/>
 			<Grafana uri={`//grafana.${publicRuntimeConfig.host}/`}/>
+			<Netdata uri={`//netdata.${publicRuntimeConfig.host}/`}/>
 			<Prometheus uri={`//prometheus.${publicRuntimeConfig.host}/`}/>
 			<ElasticSearch uri={`//elasticsearch.${publicRuntimeConfig.host}/`}/>
 			<CAdvisor uri={`//cadvisor.${publicRuntimeConfig.host}/`}/>

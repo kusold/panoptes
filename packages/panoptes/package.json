@@ -28,6 +28,7 @@
     "@panoptes/widget-grafana": "^0.1.2",
     "@panoptes/widget-icon-title": "^0.1.2",
     "@panoptes/widget-kibana": "^0.1.2",
+    "@panoptes/widget-netdata": "^0.1.2",
     "@panoptes/widget-portainer": "^0.1.2",
     "@panoptes/widget-prometheus": "^0.1.2",
     "@panoptes/widget-traefik": "^0.1.2",
