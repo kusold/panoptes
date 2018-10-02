@@ -15,7 +15,7 @@ const Page = props => (
 	<Layout>
 			<Search />
 		<Widgets>
-			<Traefik uri={`//${publicRuntimeConfig.host}:8080/`}/>
+			<Traefik uri={`//traefik.${publicRuntimeConfig.host}/`}/>
 			<Portainer uri={`//portainer.${publicRuntimeConfig.host}/`}/>
 			<Kibana uri={`//kibana.${publicRuntimeConfig.host}/`}/>
 			<Grafana uri={`//grafana.${publicRuntimeConfig.host}/`}/>
