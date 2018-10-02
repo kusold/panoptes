@@ -20,7 +20,7 @@ const Page = props => (
 			<Kibana uri={`//kibana.${publicRuntimeConfig.host}/`}/>
 			<Grafana uri={`//grafana.${publicRuntimeConfig.host}/`}/>
 			<Prometheus uri={`//prometheus.${publicRuntimeConfig.host}/`}/>
-			<ElasticSearch uri={`//elastic.${publicRuntimeConfig.host}/`}/>
+			<ElasticSearch uri={`//elasticsearch.${publicRuntimeConfig.host}/`}/>
 			<CAdvisor uri={`//cadvisor.${publicRuntimeConfig.host}/`}/>
 		</Widgets>
 	</Layout>
