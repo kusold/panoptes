@@ -1,6 +1,6 @@
 {
   "name": "@panoptes/widget-netdata",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Netdata widget",
   "author": "Mike Kusold <hello@mikekusold.com>",
   "homepage": "",
