@@ -1,3 +1,4 @@
+import { Component } from 'react';
 import getConfig from 'next/config'
 import Layout from '../components/Layout/';
 import Widgets from '../components/Widgets/';
@@ -22,31 +23,45 @@ import Lidarr from '@panoptes/widget-lidarr';
 import Mylar from '@panoptes/widget-mylar';
 const {publicRuntimeConfig} = getConfig();
 
-const Page = props => (
-	<Layout>
-		<Search />
-		<Widgets>
-			<Traefik uri={`//traefik.${publicRuntimeConfig.host}/`}/>
-			<Portainer uri={`//portainer.${publicRuntimeConfig.host}/`}/>
-			<Kibana uri={`//kibana.${publicRuntimeConfig.host}/`}/>
-			<Grafana uri={`//grafana.${publicRuntimeConfig.host}/`}/>
-			<Netdata uri={`//netdata.${publicRuntimeConfig.host}/`}/>
-			<Prometheus uri={`//prometheus.${publicRuntimeConfig.host}/`}/>
-			<ElasticSearch uri={`//elasticsearch.${publicRuntimeConfig.host}/`}/>
-			<CAdvisor uri={`//cadvisor.${publicRuntimeConfig.host}/`}/>
-			<Bazarr uri={`//bazarr.${publicRuntimeConfig.host}/`}/>
-			<Transmission uri={`//transmission.${publicRuntimeConfig.host}/`}/>
-			<NZBGet uri={`//nzbget.${publicRuntimeConfig.host}/`}/>
-			<NZBHydra uri={`//nzbhydra.${publicRuntimeConfig.host}/`}/>
-			<Jackett uri={`//jackett.${publicRuntimeConfig.host}/`}/>
-			<Radarr uri={`//radarr.${publicRuntimeConfig.host}/`}/>
-			<Sonarr uri={`//sonarr.${publicRuntimeConfig.host}/`}/>
-			<LazyLibrarian uri={`//lazylibrarian.${publicRuntimeConfig.host}/`}/>
-			<Lidarr uri={`//lidarr.${publicRuntimeConfig.host}/`}/>
-			<Mylar uri={`//mylar.${publicRuntimeConfig.host}/`}/>
-		</Widgets>
-	</Layout>
-);
+class Page extends Component {
+	static async getInitialProps({req}) {
+		let host;
+		if(publicRuntimeConfig.host) {
+			host = publicRuntimeConfig.host;
+		} else {
+		  host = req ? req.headers.host : location.hostname
+		}
+    return { host }
+	}
+	render() {
+		const {host} = this.props;
+		return (
+			<Layout>
+				<Search />
+				<Widgets>
+					<Traefik uri={`//traefik.${host}/`}/>
+					<Portainer uri={`//portainer.${host}/`}/>
+					<Kibana uri={`//kibana.${host}/`}/>
+					<Grafana uri={`//grafana.${host}/`}/>
+					<Netdata uri={`//netdata.${host}/`}/>
+					<Prometheus uri={`//prometheus.${host}/`}/>
+					<ElasticSearch uri={`//elasticsearch.${host}/`}/>
+					<CAdvisor uri={`//cadvisor.${host}/`}/>
+					<Bazarr uri={`//bazarr.${host}/`}/>
+					<Transmission uri={`//transmission.${host}/`}/>
+					<NZBGet uri={`//nzbget.${host}/`}/>
+					<NZBHydra uri={`//nzbhydra.${host}/`}/>
+					<Jackett uri={`//jackett.${host}/`}/>
+					<Radarr uri={`//radarr.${host}/`}/>
+					<Sonarr uri={`//sonarr.${host}/`}/>
+					<LazyLibrarian uri={`//lazylibrarian.${host}/`}/>
+					<Lidarr uri={`//lidarr.${host}/`}/>
+					<Mylar uri={`//mylar.${host}/`}/>
+				</Widgets>
+			</Layout>
+		);
+	}
+}
 
 export default Page;
 
