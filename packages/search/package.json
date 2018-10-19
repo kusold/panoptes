@@ -1,6 +1,6 @@
 {
   "name": "@panoptes/search",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Search bar",
   "author": "Mike Kusold <hello@mikekusold.com>",
   "homepage": "",
@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
-    "@panoptes/dev-configs": "^0.1.2"
+    "@panoptes/dev-configs": "^0.1.4"
   },
   "peerDependencies": {
     "react": "^16",
