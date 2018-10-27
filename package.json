@@ -1,6 +1,32 @@
 {
   "name": "root",
   "private": true,
+	"workspaces": [
+		"packages/dev-configs",
+		"packages/dev-lerna-template",
+		"packages/panoptes",
+		"packages/search",
+		"packages/widget",
+		"packages/widget-bazarr",
+		"packages/widget-cadvisor",
+		"packages/widget-elasticsearch",
+		"packages/widget-grafana",
+		"packages/widget-icon-title",
+		"packages/widget-jackett",
+		"packages/widget-kibana",
+		"packages/widget-lazylibrarian",
+		"packages/widget-lidarr",
+		"packages/widget-mylar",
+		"packages/widget-netdata",
+		"packages/widget-nzbget",
+		"packages/widget-nzbhydra",
+		"packages/widget-portainer",
+		"packages/widget-prometheus",
+		"packages/widget-radarr",
+		"packages/widget-sonarr",
+		"packages/widget-traefik",
+		"packages/widget-transmission"
+	],
 	"scripts": {
 		"format": "prettier --write packages/**/src/*.js"
 	},
