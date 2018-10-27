@@ -32,9 +32,9 @@ class Page extends Component {
 		if(publicRuntimeConfig.host) {
 			host = publicRuntimeConfig.host;
 		} else {
-		  host = req ? req.headers.host : location.hostname
+			host = req ? req.headers.host : location.hostname
 		}
-    return { host }
+		return { host }
 	}
 	render() {
 		const {host} = this.props;
@@ -42,20 +42,27 @@ class Page extends Component {
 			<Layout>
 				<Search />
 				<Widgets>
-					<Plex uri={`//plex.${host}/`}/>
-					<Ombi uri={`//ombi.${host}/`}/>
-					<Tautulli uri={`//tautulli.${host}/`}/>
-					<NZBGet uri={`//nzbget.${host}/`}/>
-					<RTorrent uri={`//torrent.${host}/`}/>
-					<NZBHydra uri={`//nzbhydra.${host}/`}/>
-					<Radarr uri={`//radarr.${host}/`}/>
-					<Sonarr uri={`//sonarr.${host}/`}/>
+					<Bazarr uri={`//bazarr.${host}/`}/>
+					<CAdvisor uri={`//cadvisor.${host}/`}/>
+					<ElasticSearch uri={`//elasticsearch.${host}/`}/>
+					<Grafana uri={`//grafana.${host}/`}/>
+					<Jackett uri={`//jackett.${host}/`}/>
+					<Kibana uri={`//kibana.${host}/`}/>
 					<LazyLibrarian uri={`//lazylibrarian.${host}/`}/>
 					<Lidarr uri={`//lidarr.${host}/`}/>
 					<Mylar uri={`//mylar.${host}/`}/>
+					<NZBGet uri={`//nzbget.${host}/`}/>
+					<NZBHydra uri={`//nzbhydra.${host}/`}/>
+					<Netdata uri={`//netdata.${host}/`}/>
+					<Ombi uri={`//ombi.${host}/`}/>
+					<Plex uri={`//plex.${host}/`}/>
 					<Portainer uri={`//portainer.${host}/`}/>
-					<Kibana uri={`//kibana.${host}/`}/>
-					<Grafana uri={`//grafana.${host}/`}/>
+					<Prometheus uri={`//prometheus.${host}/`}/>
+					<RTorrent uri={`//torrent.${host}/`}/>
+					<Radarr uri={`//radarr.${host}/`}/>
+					<Sonarr uri={`//sonarr.${host}/`}/>
+					<Tautulli uri={`//tautulli.${host}/`}/>
+					<Traefik uri={`//traefik.${host}/`}/>
 				</Widgets>
 			</Layout>
 		);

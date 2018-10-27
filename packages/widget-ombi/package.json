@@ -1,0 +1,26 @@
+{
+  "name": "@panoptes/widget-ombi",
+  "version": "0.1.4",
+  "description": "ombi widget",
+  "author": "Mike Kusold <hello@mikekusold.com>",
+  "homepage": "",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist --copy-files",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@panoptes/dev-configs": "^0.1.4",
+    "@panoptes/widget-icon-title": "^0.1.4"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16"
+  }
+}

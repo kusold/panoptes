@@ -5,6 +5,9 @@ const Header = props => (
 		<Link href="/">
 			<a>Home</a>
 		</Link>
+		<Link href="/all">
+			<a>All</a>
+		</Link>
 		<style jsx>{`
 			div {
 				background: rgba(255,255,255,0.15);
