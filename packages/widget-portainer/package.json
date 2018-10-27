@@ -1,6 +1,6 @@
 {
   "name": "@panoptes/widget-portainer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Portainer widget",
   "author": "Mike Kusold <hello@mikekusold.com>",
   "homepage": "",
@@ -16,8 +16,8 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
-    "@panoptes/dev-configs": "^0.1.4",
-    "@panoptes/widget-icon-title": "^0.1.4"
+    "@panoptes/dev-configs": "^0.1.5",
+    "@panoptes/widget-icon-title": "^0.1.5"
   },
   "peerDependencies": {
     "react": "^16",

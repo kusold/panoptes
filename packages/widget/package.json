@@ -1,6 +1,6 @@
 {
   "name": "@panoptes/widget",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Widget component for panoptes",
   "author": "Mike Kusold <hello@mikekusold.com>",
   "homepage": "",
@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
-    "@panoptes/dev-configs": "^0.1.4"
+    "@panoptes/dev-configs": "^0.1.5"
   },
   "peerDependencies": {
     "react": "^16",
